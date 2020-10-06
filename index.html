@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <script>
+            console.log("Olá Mundo!");
+
+            //variáveis - tipagem dinâmica
+            var nome = "Daniele"; //String
+            var idade = 29; //integer
+            var peso = 45.5; //float
+            var mulher = true; //boolean
+
+            var alunos = ['Daniele', 'Damile', 'Maria']; //vetores
+            var aluno = {
+                nome: alunos[1],
+                idade: 29,
+                peso: 45.5,
+                mulher: true
+            }; //objeto
+
+            console.log(nome, idade, peso, mulher);
+            console.log(alunos[2]); //vetores
+            console.log(aluno.nome); //objeto
+
+            // Operações matemáticas
+
+            var x = 133,
+                y = 5;
+            var resultado = x - y;
+            console.log(x, y);
+            console.log(resultado);
+
+            var concatenar = "10" + 5;
+            //concatenação
+            document.write(concatenar, "<br >");
+
+            var a = 100;
+            a += 3;
+            document.write(a, "<br >");
+
+            //modulo
+            // resto da divisão
+            var modulo = x % y;
+            document.write(modulo, "<br >");
+
+            //Funções
+            function multiplicacao(num1, num2) {
+                var resultado2 = num1 * num2;
+                return resultado2;
+            }
+
+            var resultado2 = multiplicacao(5, 10);
+            document.write(resultado2, "<br >");
+
+            function divisao(num3, num4) {
+                var div = num3 / num4;
+                return div;
+            }
+
+            var div = divisao(200, 5);
+            document.write(div, "<br>")
+
+            //Condicional
+
+            function retornaVotacao(voto) {
+                // sim, não
+
+                if (voto === "sim") {
+                    return "sim";
+                } else {
+                    return "não";
+                }
+            }
+
+            var resultado3 = retornaVotacao('oi');
+            document.write(resultado3, "<c br>");
+
+            function retornaSexo(sexo) {
+                switch (sexo) {
+                    case 'M':
+                        return "Maculino";
+                    case 'F':
+                        return "Feminino";
+                    default:
+                        return "Outro";
+                }
+            }
+
+            var resultado4 =  retornaSexo('F');
+            document.write('Qual é o seu sexo? ', resultado4);
+        </script>
+    </body>
+</html>
